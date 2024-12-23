@@ -1,0 +1,22 @@
+{
+    "name": "My App",
+    "version": "1.0.0",
+    "description": "Aceasta este o aplicatie care reprezinta o simulare a unui generator PWM",
+    "author": "Mihail Boinceanu",
+    "license": "MIT",
+    "size": {
+        "width": 1200,
+        "height": 800
+    },
+    "repository": {
+        "type": "git",
+        "url": " -- your git repository url -- ",
+        "branch": "master",
+        "path": "src",
+        "directory": "src",
+        "file": "config.json"
+    },
+    "matlab": {
+        "version": "R2024b"
+    }
+}
