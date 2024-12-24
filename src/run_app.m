@@ -3,7 +3,6 @@ function component = run_app(json_data)
 
     screen_size = get(0, 'ScreenSize');
 
-
     component.name = json_data.name;
     component.version = json_data.version;
     component.author = json_data.author;
@@ -15,7 +14,7 @@ function component = run_app(json_data)
     component.figure =...
         uifigure('Name', component.name, 'Position', [center, component.size.width, component.size.height]);
 
-    component.box =... % Grid layout
+    component.box =...
         uigridlayout(component.figure, [10, 10]);
 
     component.navbar = navbar(component);

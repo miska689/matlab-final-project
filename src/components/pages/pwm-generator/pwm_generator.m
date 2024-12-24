@@ -1,6 +1,6 @@
 function component = pwm_generator(parent, vis)
     component = struct;
-    component.page_name = "Generator de tensiune";
+    component.page_name = "Generator PWM";
     component.box = uipanel(parent.box);
 
     component.box.Layout.Row = [1 10];

@@ -1,6 +1,6 @@
 function component = circuits_online(parent, vis)
     component = struct;
-    component.page_name = "CircuitsOnline";
+    component.page_name = "Circuits Online";
     component.box = uipanel(parent.box);
 
     component.box.Layout.Row = [1 10];
