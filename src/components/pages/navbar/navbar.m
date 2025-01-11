@@ -1,6 +1,5 @@
 function component = navbar(parent)
     component = struct;
-
     component.html = uihtml(parent.figure, 'Position', [0, 0, 260, parent.size.height]);
     component.html.HTMLSource = fullfile(pwd, 'src', 'assets', 'html', 'navbar', 'navbar.html');
     component.html.HTMLEventReceivedFcn = @displayWindow;
