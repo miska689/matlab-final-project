@@ -3,6 +3,12 @@
 ## Overview
 This project was created as part of the GAC laboratory and represents a PWM (Pulse Width Modulation) generator. PWM is a technique used to control the amount of power delivered to a load by varying the duty cycle of a digital signal.
 
+## PowerPoint Presentation
+The PowerPoint presentation can be found [here](https://docs.google.com/presentation/d/1Painx1U3GGxpG3wYjhzfPgWUQtZkgDN-DALpkIib8aw/edit?usp=sharing)
+
+## Word Document
+The Word document can be found [here](https://docs.google.com/document/d/1nOcyQRPN5GPbx6NIwJR80hOIQaa0YCLWozE908TssdY/edit?usp=sharing)
+
 ## Project Structure
 The project consists of the following main components:
 - `src/main.m`: Main script to run the application.
