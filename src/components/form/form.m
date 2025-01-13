@@ -17,10 +17,17 @@ function component = form(parent, params)
         label.Layout.Row = i;
         label.Layout.Column = 1;
 
-        component.editfields{i} =...
-            uieditfield(component.box, "numeric", "Value", field.value, "ValueDisplayFormat", field.format);
+        if strcmp(field.type, "numeric")
+            component.editfields{i} =...
+                uieditfield(component.box, "numeric", "Value", field.value, "ValueDisplayFormat", field.format);
+        elseif strcmp(field.type, "slider")
+            component.editfields{i} =...
+                uislider(component.box, "Value", field.value, "Limits", field.limits);
+        end
+
         component.editfields{i}.Layout.Row = i;
         component.editfields{i}.Layout.Column = 2;
+
         component.data.(field.name) = component.editfields{i}.Value;
     end
 

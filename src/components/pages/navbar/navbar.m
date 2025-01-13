@@ -12,7 +12,6 @@ function component = navbar(parent)
     %   -- Home
     pages = {
         documentation(parent, "off"),
-        circuits_online(parent, "off"),
         pwm_generator(parent, "off"),
         home_app(parent, "on")
     };

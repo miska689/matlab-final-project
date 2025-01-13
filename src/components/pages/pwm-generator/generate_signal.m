@@ -3,7 +3,7 @@ function data = generate_signal(P, P_S, C, V, T)
 
     data.P = P; % Pontentiometer value
     data.P_S = P_S; % Pontentiometer state
-    data.C = C; % Condensator value
+    data.C = C; % Capacitor value
     data.V = V; % V_in
     data.T = T; % Period
 
@@ -17,7 +17,7 @@ function data = generate_signal(P, P_S, C, V, T)
     data.signal = zeros(size(data.t)); % Signal vector
     state = 1; % State of the signal
 
-    data.V_C = zeros(size(data.t)); % Condestaor voltage vector
+    data.V_C = zeros(size(data.t)); % Capaitor voltage vector
     for i = 2:length(data.t)
         if state
             data.V_C(i) =...
@@ -36,4 +36,6 @@ function data = generate_signal(P, P_S, C, V, T)
 
         data.signal(i) = state;
     end
+
+    data.out = data.signal * data.V;
 end

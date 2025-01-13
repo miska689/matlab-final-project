@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentație Circuit Temporizator 555</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img, .gif {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Documentație Circuit Temporizator 555</h1>
+    <p>Această pagină oferă o prezentare generală a unui circuit cu temporizator 555 utilizat ca multivibrator astabil. Acest tip de circuit generează o ieșire continuă în formă de undă dreptunghiulară, utilă pentru aplicații de cronometrare, generare de impulsuri și frecvență.</p>
+
+    <h2>Diagrama Circuitului</h2>
+    <div class="image">
+        <img src="circuit.png" alt="Diagrama Circuitului Temporizator 555">
+    </div>
+
+    <h2>Explicația Componentelor</h2>
+    <ul>
+        <li><strong>U1 (Circuit Integrat Temporizator 555)</strong>: Nucleul circuitului, configurat în modul astabil pentru a genera o undă dreptunghiulară.</li>
+        <li><strong>RV1 (Potentiometru de 10k)</strong>: Ajustează factorul de umplere al formei de undă de ieșire.</li>
+        <li><strong>D1 și D2 (Diodă 1N4148)</strong>: Controlează căile de încărcare și descărcare ale condensatorului C1.</li>
+        <li><strong>C1 (Condensator de 100nF)</strong>: Determină frecvența împreună cu RV1.</li>
+        <li><strong>R1 (Rezistor de 100 Ohmi)</strong>: Limitează curentul prin LED.</li>
+        <li><strong>R2 (Rezistor de 1k, Opțional)</strong>: Rezistor opțional pentru o flexibilitate suplimentară în configurare.</li>
+        <li><strong>D3 (LED-ROȘU)</strong>: Ieșire vizuală pentru a indica impulsurile formei de undă.</li>
+    </ul>
+
+    <h2>Principiul de Funcționare</h2>
+    <p>Circuitul funcționează prin încărcarea și descărcarea condensatorului C1 prin diode și potentiometru, care determină frecvența și factorul de umplere al ieșirii. LED-ul clipeste în sincronizare cu forma de undă generată, oferind o indicație vizuală.</p>
+
+    <h2>Demonstratie Animată</h2>
+    <div class="gif">
+        <img src="circuit.gif" alt="Circuit Temporizator 555 Animat">
+    </div>
+
+    <h2>Aplicații</h2>
+    <ul>
+        <li>Beculețe și indicatoare intermitente</li>
+        <li>Generatoare de impulsuri și semnale dreptunghiulare</li>
+        <li>Generarea și modularea frecvențelor</li>
+    </ul>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

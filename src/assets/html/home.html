@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWM Generators</title>
+    <title>Generatoare PWM</title>
     <style>
         body {
+            position: relative;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
         }
 
         header {
@@ -55,6 +59,10 @@
         }
 
         footer {
+            width: 100vw;
+            position: absolute;
+            left: 0;
+            bottom: 0;
             text-align: center;
             margin-top: 20px;
             padding: 10px;
@@ -75,36 +83,36 @@
 </head>
 <body>
 <header>
-    <h1>PWM Generators</h1>
+    <h1>Generatoare PWM</h1>
 </header>
 <div class="container">
     <section>
-        <h2 class="section-title">What is PWM?</h2>
+        <h2 class="section-title">Ce este PWM?</h2>
         <p>
-            PWM stands for <span class="highlight">Pulse Width Modulation</span>. It is a technique used to control the amount of power delivered to a load by varying the duty cycle of a digital signal.
+            PWM înseamnă <span class="highlight">Modulație a Lățimii Pulsului</span>. Este o tehnică folosită pentru a controla cantitatea de putere livrată către o sarcină prin variarea ciclului de funcționare al unui semnal digital.
         </p>
     </section>
     <section>
-        <h2 class="section-title">Applications</h2>
+        <h2 class="section-title">Aplicații</h2>
         <ul>
-            <li>Controlling motor speed</li>
-            <li>Dimming LED lights</li>
-            <li>Generating analog signals from digital sources</li>
-            <li>Power regulation in power supplies</li>
+            <li>Controlul vitezei motoarelor</li>
+            <li>Reducerea intensității luminii LED</li>
+            <li>Generarea de semnale analogice din surse digitale</li>
+            <li>Reglarea puterii în sursele de alimentare</li>
         </ul>
     </section>
     <section>
-        <h2 class="section-title">Advantages of PWM</h2>
+        <h2 class="section-title">Avantajele PWM</h2>
         <ul>
-            <li>High efficiency</li>
-            <li>Precise control</li>
-            <li>Compact implementation</li>
+            <li>Eficiență ridicată</li>
+            <li>Control precis</li>
+            <li>Implementare compactă</li>
         </ul>
     </section>
 </div>
 <footer>
     <p>
-        Created by <a href="https://github.com/miska689" target="_blank">0xm1ke7u</a> | © 2024
+        Creat de <a href="https://github.com/miska689" target="_blank">0xm1ke7u</a> | © 2024
     </p>
 </footer>
 </body>
