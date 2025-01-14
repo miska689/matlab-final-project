@@ -18,7 +18,7 @@ The project consists of the following main components:
 
 ## Run app
 ```bash
-$ matlab --nondesktop # Run MATLAB in terminal mode
+$ matlab --nodesktop # Run MATLAB in terminal mode
 ```
 
 ```matlab
